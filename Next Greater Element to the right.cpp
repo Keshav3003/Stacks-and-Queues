@@ -1,4 +1,4 @@
-vector < int > nextGreater(vector < int > & nums)
+vector < int > nextLargeElement(vector < int > & nums)
 {
       int n = nums.size();
       vector < int > nge(n,-1);
@@ -27,7 +27,7 @@ int main()
       cin>>input;
       v.push_back(input);
     }
-    vector < int > ans = nextGreater(v);
+    vector < int > ans = nextLargeElement(v);
     for (int i = 0; i < ans.size(); i++) 
         cout << ans[i] << " ";
     return 0;
